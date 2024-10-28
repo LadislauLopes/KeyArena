@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-i0tz%814m83=9x_=r=5@tb2cdkfnpt6o5w2%31=k!q$-!yyi)q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,6 +78,17 @@ WSGI_APPLICATION = 'projeto_eng.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'KeyArenaData',
+#         'USER': 'postgres',
+#         'PASSWORD': 'root',
+#         'HOST': 'postgres',
+#         'PORT': '5432'
+#     }
+# }
 
 DATABASES = {
     'default': {
